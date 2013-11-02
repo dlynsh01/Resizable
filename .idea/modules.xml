@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Resizable/Resizable.iml" filepath="$PROJECT_DIR$/Resizable/Resizable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ResizableProject.iml" filepath="$PROJECT_DIR$/ResizableProject.iml" />
+    </modules>
+  </component>
+</project>
+
