@@ -4,25 +4,93 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="0px"
-    android:orientation="horizontal"
-    android:layout_weight="1"
-    >
-    <Button
-        android:layout_width="0px"
-        android:layout_height="match_parent"
-        android:text="A"
-        android:layout_weight="1"
-        />
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/red">
 
-    <Button
-        android:layout_width="0px"
-        android:layout_height="match_parent"
-        android:text="B"
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/heading"
+            style="@style/header2"/>
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/settings"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/pin"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/settings"
+            android:id="@+id/imageView" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:orientation="horizontal"
         android:layout_weight="1"
-        />
+        >
+        <LinearLayout
+            style="@style/card_r2"
+            >
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/icon"
+                    android:src="@drawable/data_over"/>
+
+                <TextView
+                    style="@style/title"
+                    android:text="@string/dataTitle"/>
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/body"
+                android:text="@string/dataBody"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/card_b2"
+            >
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/icon"
+                    android:src="@drawable/battery_good"/>
+
+                <TextView
+                    style="@style/title"
+                    android:text="@string/batteryTitle"/>
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/body"
+                android:text="@string/batteryBody"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -32,20 +100,56 @@
         android:orientation="horizontal"
         android:layout_weight="1"
         >
-        <Button
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:text="A"
-            android:layout_weight="1"
-            />
+        <LinearLayout
+            style="@style/card_y2"
+            >
 
-        <Button
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:text="Tip"
-            android:id="@+id/help"
-            android:layout_weight="1"
-            />
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/icon"
+                    android:src="@drawable/storage"/>
+
+                <TextView
+                    style="@style/title"
+                    android:text="@string/storageTitle"/>
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/body"
+                android:text="@string/storageBody"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/card_r2"
+            android:id="@id/help"
+            >
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/icon"
+                    android:src="@drawable/tips"/>
+
+                <TextView
+                    style="@style/title"
+                    android:text="@string/tipTitle"/>
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/body"
+                android:text="@string/tipBody"/>
+
+        </LinearLayout>
 
     </LinearLayout>
     <LinearLayout
@@ -54,40 +158,117 @@
         android:orientation="horizontal"
         android:layout_weight="1"
         >
-        <Button
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:text="A"
-            android:layout_weight="1"
-            />
+        <LinearLayout
+            style="@style/card_b2"
+            >
 
-        <Button
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:text="B"
-            android:layout_weight="1"
-            />
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/icon"
+                    android:src="@drawable/lock"/>
+
+                <TextView
+                    style="@style/title"
+                    android:text="@string/lockTitle"/>
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/body"
+                android:text="@string/lockBody"/>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            style="@style/card_y2"
+            >
+            <ImageView
+                style="@style/pinMe"/>
+
+            <LinearLayout
+                style="@style/icontitle"
+                android:id="@+id/icontitle"
+               >
+
+                <ImageView
+                    style="@style/icon"
+                    android:src="@drawable/rain"/>
+
+                <TextView
+                    style="@style/title"
+                    android:text="@string/weatherTitle"/>
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/body"
+                android:text="@string/weatherBody"
+                android:layout_below="@id/icontitle"/>
+        </RelativeLayout>
 
     </LinearLayout>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0px"
         android:orientation="horizontal"
         android:layout_weight="1"
         >
-        <Button
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:text="A"
-            android:layout_weight="1"
-            />
+        <LinearLayout
+            style="@style/card_b2"
+            >
 
-        <Button
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:text="B"
-            android:layout_weight="1"
-            />
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/icon"
+                    android:src="@drawable/wallpaper"/>
+
+                <TextView
+                    style="@style/title"
+                    android:text="@string/wallTitle"/>
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/body"
+                android:text="@string/wallBody"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/card_r2"
+            >
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/icon"
+                    android:src="@drawable/storage"/>
+
+                <TextView
+                    style="@style/title"
+                    android:text="@string/appTitle"/>
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/body"
+                android:text="@string/appBody"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 

@@ -6,5 +6,30 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_pop">PopActivity</string>
     <string name="tip">Ever wonder what this emoticon means? //O-O\\   It\'s John Lennon!</string>
+    <string name="vzw">My Verizon</string>
+    <string name="data">Data Usage</string>
+    <string name="tipTitle">New Tip!</string>
+    <string name="batteryTitle">90% Battery</string>
+    <string name="batteryBody">Tap to view battery usage details</string>
+    <string name="dataTitle">90% Data Used</string>
+    <string name="dataBody">Tap to view data usage details</string>
+    <string name="storageTitle">95% Free Storage</string>
+    <string name="storageBody">Tap to view phone storage details</string>
+    <string name="helpTitle">Help</string>
+    <string name="helpBody">Tap to go to the Help App</string>
+    <string name="tipBody">Ever wonder what this emoticon means? //O-O\\   It\'s John Lennon!</string>
+    <string name="wallTitle">Wallpaper</string>
+    <string name="wallBody">Tap to change your wallpaper</string>
+    <string name="lockTitle">Lock Your Phone</string>
+    <string name="lockBody">Tap to change your lock screen settings</string>
+    <string name="weatherTitle">Rain Today</string>
+    <string name="weatherBody">Don\'t forget your umbrella!</string>
+    <string name="sampleBody">Lots of body text that goes two lines</string>
+    <string name="appTitle">Get New Apps</string>
+    <string name="appBody">Tap to go to the Google Play Store</string>
+    <string name="tipSmall">Tips</string>
+    <string name="title_activity_action">MainActivity</string>
+    <string name="action">Go to Settings</string>
+    <string name="popTitle">Tip Title</string>
 
 </resources>

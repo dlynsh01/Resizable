@@ -22,6 +22,7 @@ public class AppWidget extends AppWidgetProvider {
             onAppWidgetOptionsChanged(context, appWidgetManager, appWidgetId, options);
 
             RemoteViews updateViews = new RemoteViews(context.getPackageName(), R.layout.widget4x4);
+
             Intent intent = new Intent(context, PopActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             PendingIntent pendingIntent =  PendingIntent.getActivity(context, 0, intent, 0);
@@ -39,7 +40,7 @@ public class AppWidget extends AppWidgetProvider {
 
         RemoteViews updateViews = null;
         //RemoteViews updateViews=
-         //       new RemoteViews(ctxt.getPackageName(), R.layout.widget4x4);
+          //    new RemoteViews(ctxt.getPackageName(), R.layout.widget);
 
         String msg =
                 String.format(Locale.getDefault(),
@@ -54,7 +55,8 @@ public class AppWidget extends AppWidgetProvider {
         int minHeight = newOptions.getInt(AppWidgetManager.OPTION_APPWIDGET_MIN_HEIGHT);
         int maxHeight = newOptions.getInt(AppWidgetManager.OPTION_APPWIDGET_MAX_HEIGHT);
 
-        //updateViews.setTextViewText(R.id.size, msg);
+
+        //updateViews.setTextViewText(android.R.id.size, msg);
 
         //1x1 widget
         if(minWidth == 64 && maxWidth == 90 && minHeight == 58 && maxHeight == 84){
@@ -120,6 +122,10 @@ public class AppWidget extends AppWidgetProvider {
         if(minWidth == 304 && maxWidth == 408 && minHeight == 280 && maxHeight == 384){
             updateViews = new RemoteViews(ctxt.getPackageName(), R.layout.widget4x4);
         }
+
+      //  if (updateViews == new RemoteViews(ctxt.getPackageName(), R.layout.widget4x4)) {
+
+      //  }
 
         Intent intent = new Intent(ctxt, PopActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

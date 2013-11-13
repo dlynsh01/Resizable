@@ -1,8 +1,202 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+    <style name="AppTheme" parent="android:Theme.Holo.Light.Dialog.NoActionBar">
         <!-- Customize your theme here. -->
     </style>
 
+    //header styles
+    <style name="header">
+        <item name="android:background">@color/red</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:text">@string/vzw</item>
+        <item name="android:padding">3dp</item>
+
+    </style>
+
+    <style name="header2">
+        <item name="android:background">@color/red</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:text">@string/vzw</item>
+        <item name="android:padding">3dp</item>
+    </style>
+
+    <style name="data">
+        <item name="android:background">@color/red</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:text">@string/vzw</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    //small card styles
+    <style name="card_s">
+        <item name="android:background">@drawable/card_small</item>
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="card_s2">
+        <item name="android:background">@drawable/card_small</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0px</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    //small card text style
+    <style name="text">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    //small card image style
+    <style name="icon_s">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    //card styles
+    <style name="card_r">
+        <item name="android:background">@drawable/card_red</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0px</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="card_r2">
+        <item name="android:background">@drawable/card_red</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <style name="card_b">
+         <item name="android:background">@drawable/card_blue</item>
+         <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+         <item name="android:layout_marginRight">3dp</item>
+         <item name="android:layout_marginLeft">3dp</item>
+         <item name="android:layout_marginTop">5dp</item>
+         <item name="android:layout_width">match_parent</item>
+         <item name="android:layout_height">0px</item>
+         <item name="android:layout_weight">1</item>
+         <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="card_b2">
+        <item name="android:background">@drawable/card_blue</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="card_y">
+        <item name="android:background">@drawable/card_yellow</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0px</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="card_y2">
+        <item name="android:background">@drawable/card_yellow</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    //card text styles
+    <style name="title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="body">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    //card image style
+    <style name="icon">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    //pin image style
+    <style name="pinMe">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@drawable/pinw</item>
+        <item name="android:id">@+id/pin</item>
+    </style>
+
+    //linear layout for icon title
+    <style name="icontitle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
 </resources>

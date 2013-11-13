@@ -4,67 +4,109 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <TextView
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:orientation="horizontal"
-        android:layout_weight="1"
-        >
-        <Button
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:text="A"
-            android:layout_weight="1"
-            />
+        android:id="@+id/heading"
+        style="@style/header2"/>
 
+    <LinearLayout
+        style="@style/card_b"
+        >
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/icon"
+                android:src="@drawable/data"/>
+
+            <TextView
+                style="@style/title"
+                android:text="@string/dataTitle"/>
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/body"
+            android:text="@string/dataBody"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:orientation="horizontal"
-        android:layout_weight="1"
+        style="@style/card_b"
         >
 
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
 
-        <Button
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:text="Tip"
-            android:id="@+id/help"
-            android:layout_weight="1"
-            />
+            <ImageView
+                style="@style/icon"
+                android:src="@drawable/battery"/>
+
+            <TextView
+                style="@style/title"
+                android:text="@string/batteryTitle"/>
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/body"
+            android:text="@string/batteryBody"/>
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:orientation="horizontal"
-        android:layout_weight="1"
-        >
-        <Button
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:text="A"
-            android:layout_weight="1"
-            />
 
+    <LinearLayout
+        style="@style/card_y"
+        >
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/icon"
+                android:src="@drawable/storage"/>
+
+            <TextView
+                style="@style/title"
+                android:text="@string/storageTitle"/>
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/body"
+            android:text="@string/storageBody"/>
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:orientation="horizontal"
-        android:layout_weight="1"
-        >
-        <Button
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:text="A"
-            android:layout_weight="1"
-            />
 
+    <LinearLayout
+        style="@style/card_r"
+        android:id="@+id/help">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/icon"
+                android:src="@drawable/tips"/>
+
+            <TextView
+                style="@style/title"
+                android:text="@string/tipTitle"/>
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/body"
+            android:text="@string/tipBody"/>
     </LinearLayout>
 
 </LinearLayout>

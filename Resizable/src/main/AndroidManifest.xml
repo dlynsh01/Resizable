@@ -32,6 +32,12 @@
             android:label="@string/title_activity_pop"
             android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" >
         </activity>
+        <activity
+            android:name="com.dnl.resizable.ActionActivity"
+            android:label="@string/title_activity_action"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar"
+            android:noHistory="true">
+        </activity>
     </application>
 
 </manifest>

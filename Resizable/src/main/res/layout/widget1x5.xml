@@ -4,44 +4,88 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/heading"
+        style="@style/data"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0px"
         android:orientation="horizontal"
         android:layout_weight="1"
         >
-        <Button
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:text="A"
-            android:layout_weight="1"
-            />
-        <Button
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:text="A"
-            android:layout_weight="1"
-            />
-        <Button
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:text="A"
-            android:layout_weight="1"
-            />
-        <Button
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:text="A"
-            android:layout_weight="1"
-            />
+        <LinearLayout
+            style="@style/card_s"
+            >
 
-        <Button
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:text="Tip"
-            android:id="@+id/help"
-            android:layout_weight="1"
-            />
+            <ImageView
+                style="@style/icon_s"
+                android:src="@drawable/data"/>
+
+            <TextView
+                style="@style/text"
+                android:text="@string/dataTitle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/card_s"
+            >
+
+            <ImageView
+                style="@style/icon_s"
+                android:src="@drawable/battery"/>
+
+            <TextView
+                style="@style/text"
+                android:text="@string/batteryTitle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/card_s"
+            >
+
+            <ImageView
+                style="@style/icon_s"
+                android:src="@drawable/storage"/>
+
+            <TextView
+                style="@style/text"
+                android:text="@string/storageTitle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/card_s"
+            >
+
+            <ImageView
+                style="@style/icon_s"
+                android:src="@drawable/help"/>
+
+            <TextView
+                style="@style/text"
+                android:text="@string/helpTitle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/card_s"
+            android:id="@id/help"
+            >
+
+            <ImageView
+                style="@style/icon_s"
+                android:src="@drawable/tips"/>
+
+            <TextView
+                style="@style/text"
+                android:text="@string/tipSmall"/>
+
+        </LinearLayout>
 
 
     </LinearLayout>
